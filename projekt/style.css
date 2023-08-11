@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Squadron-Regular';
+    src: url('font/Squadron-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Squadron-Regular-Italic';
+    src: url('font/Squadron-RegularItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Squadron-Bold';
+    src: url('font/Squadron-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    font-family: Squadron-Regular;
+}
+
+#title::before {
+    content: "";
+    width: 200px;
+    height: 5px;
+    display: block;
+    position: relative;
+    transform: translateY(48px);
+    background-color: rgb(0, 102, 255);
+
+    }
+#title::after {
+      content: "";
+      width: 40px;
+      height: 15px;
+      display: block;
+      transform: translateY(5px);
+      background-color: rgb(0, 102, 255);
+      margin-left: 80px;
+    }
+#search-icon {
+    height: 20px;
+}
+#mountain {
+    height: 60px;
+}
+
+.text {
+    display:inline-block;
+}
+#poradime-vam {
+    font-size: 13px;
+    padding: 0;
+    margin: 0
+}
+#percent {
+color: orange;
+}
+#uvodni-jumbotron, #koncovy-jumbotron {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#uvodni-jumbotron {
+    background-image: url(pic/background-img.jpg);
+}
+#koncovy-jumbotron {
+    background-image: url(pic/novinky-hanibal-pozadi.png);
+}
+
+/*GRID CONTAINER - GALERIE OBRÁZKŮ*/
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9 {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.img1, .img4 {
+    min-height: 500px;
+}
+
+.img2, .img3, .img5, .img6, .img7, .img8, .img9 {
+    min-height: 287px;
+}
+
+.img1 { 
+    grid-area: img1;
+    background-image: url("pic/verejny-bazen.jpg");
+}
+.img2 { 
+    grid-area: img2; 
+    background-image: url("pic/turistika.jpg");
+}
+.img3 { 
+    grid-area: img3; 
+    background-image: url("pic/okoli-mesta.jpeg");
+}
+.img4 { 
+    grid-area: img4; 
+    background-image: url("pic/fitness-centrum.png");
+}
+.img5 { 
+    grid-area: img5; 
+    background-image: url("pic/vodopady.jpg");
+}
+.img6 { 
+    grid-area: img6; 
+    background-image: url("pic/kempovani.jpg");
+}
+.img7 { 
+    grid-area: img7; 
+    background-image: url("pic/kam-na-kole.jpg");
+}
+.img8 { 
+    grid-area: img8; 
+    background-image: url("pic/kam-zajit-na-jidlo.jpg");
+}
+.img9 { 
+    grid-area: img9; 
+    background-image: url("pic/jak-se-vybavit.jpg");
+}
+h2  {
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'img1 img1 img2 img3'
+    'img1 img1 img4 img4'
+    'img5 img6 img4 img4'
+    'img7 img8 img9 img9';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.user-comment img , .user-comment-right img{
+    border-radius: 100px;
+    width: 64px;
+  }
+  .user-comment-right {
+    border-left: 4px solid rgb(0, 102, 255);  
+    padding-left: 1em;
+  }
+          /* Media Query for Mobile and Tablet Devices */
+          @media (max-width: 767px) {
+            .user-comment-right {
+              border-right: 4px solid rgb(0, 102, 255);   
+              border-left: none;
+              margin-top: 1.2em;
+              padding-right: 1em;
+              padding-left: 1em;
+            }
+        }
+  
+.user-comment {
+    border-left: 4px solid rgb(0, 102, 255);
+    padding-left: 1em;
+}
+.container-social-media {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.container-social-media img:hover {
+    transition: 0.4s;
+    transform: translateY(-10px);
+}
+footer {
+    background-color: rgb(0, 102, 255);
+}
+
+footer p {
+    text-align: justify;
+}
+
+/*RESPONZIVNÍ GALERIE PRO TABLETY*/
+@media only screen and (min-width: 769px) and (max-width: 1281px)  {
+    .grid-container {
+        grid-template-areas:
+            'img1 img1'
+            'img2 img3'
+            'img4 img4'
+            'img5 img6'
+            'img7 img8'
+            'img9 img9'
+      }
+}
+
+/*RESPONZIVNÍ GALERIE PRO MOBILNÍ ZAŘÍZENÍ*/
+@media only screen and (min-width: 480px) and (max-width: 769px) {
+    .grid-container {
+        grid-template-areas:
+            'img1'
+            'img2'
+            'img3'
+            'img4'
+            'img5'
+            'img6'
+            'img7'
+            'img8'
+            'img9'
+      }
+}
+
+
+
+

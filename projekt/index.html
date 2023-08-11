@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Gdansk</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<!----------------------------------------NAVIGAČNÍ MENU----------------------------------------------------------------->
+
+        <nav class="navbar navbar-expand-md navbar-light nav-tabs">
+
+          <div class="container">
+          <div class="navbar-brand">
+            <a href="index.html">
+                <img src="pic/demo-logo.png"  height="32" alt="gdansk-logo" class="d-inline-block align-top"> Oceárium Gdansk
+            </a>
+        </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <div class="navbar-search">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <img src="pic/search-icon.png" alt="vyhledat zboží" id="search-icon">
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Hledáte zajímavá místa v okolí..">
+                    </div>
+                </div>
+                
+                <img src="pic/phone-icon.png" alt="telefonní kontakt" class="ml-3">
+                <div class="nav-link pl-0 ml-0 disabled">
+                        <div>
+                            <div class="text">
+                            <p id="poradime-vam">Poradíme Vám s výběrem</p>
+                            <h5>730 547 968</h5>
+                            </div>
+                        </div>
+                </div>
+        
+                <img src="pic/mountain.png" class="nav-link disabled" id="mountain">
+                <div class="nav-link disabled pr-0">
+                    <img src="pic/favourite-icon.png" alt="oblíbené položky" class="mr-3">
+                    <img src="pic/user-icon.png" alt="nasatvení uživatele" class="mr-3">
+                    <img src="pic/shopping-cart-icon.png" alt="nákupní košík">
+                </div>
+            </div>
+            </div>
+        </nav>
+
+<!----------------------------------------NAVIGAČNÍ LIŠTA----------------------------------------------------------------->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light nav-tabs sticky-top navigacni-lista">
+    <div class="container">
+  
+      <div class="collapse navbar-collapse" id="menu-navigace">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Muži</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Ženy</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Děti</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Boty</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Turistika a camping</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Lezení</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Ostatní</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Značky</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Výprodej <span id="percent">%</span></a>
+          </li>
+
+        </ul>
+      </div>
+
+<!----------------------------------------DROPDOWN S AKTIVITAMI----------------------------------------------------------------->
+
+        <div class="dropdown">
+          <button href="index.html" class="nav-link dropdown-toggle btn btn-dark text-white" data-toggle="dropdown">Vybrat podle aktivity <img src="pic/mountain-icon.png" alt=""></button>
+          <div class="dropdown-menu" id="myDropdown">
+            <!--ZDE BUDOU AKTIVITY-->
+          </div>
+        </div>
+    </div>
+  </nav>
+
+<!----------------------------------------ÚVODNÍ JUMBOTRON----------------------------------------------------------------->
+
+      <section class="jumbotron" id="uvodni-jumbotron">   
+            <div class="row">
+                <div class="col-lg-4 col-md-6 offset-md-2">
+                    <div class="bg-white px-5 py-4">
+                        
+                        <p>Gdansk   /   Aktivity</p>
+                        <h1>Vyberte si vybavení podle aktivity</h1>
+                        <p>Vivamus ac leo pretium faucibus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,</p>
+                        <button class="btn btn-primary py-2">Pokračovat dále</button>
+                    </div>
+            </div>
+        </div>    
+      </section>
+
+<!----------------------------------------AKTIVITY - IMGS----------------------------------------------------------------->
+
+<section class="grid-container container mb-5">
+  <div class="img1"><h2>Turistika a treking</h2></div>
+  <div class="img2"><h2>Turistika</h2></div>
+  <div class="img3"><h2>Město</h2></div>  
+  <div class="img4"><h2>Fitness centrum</h2></div>
+  <div class="img5"><h2>Vodopády</h2></div>
+  <div class="img6"><h2>Stanování</h2></div>
+  <div class="img7"><h2>Cyklistika</h2></div>
+  <div class="img8"><h2>Místní podniky</h2></div>
+  <div class="img9"><h2>Jak se vybavit</h2></div>
+</section>
+
+<!----------------------------------------HLAVNÍ OBSAH----------------------------------------------------------------->
+
+  <main>
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h3 class="pb-2" id="title">Důraz na detail a kvalitu</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum est cupiditate eveniet dicta ad non dolor quae eum laudantium atque dolore praesentium quas corrupti</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At repellat unde expedita dolor, ipsum, nostrum ipsa officia quo dolores veritatis aspernatur commodi saepe provident nam inventore ea, corporis minima omnis!</p> 
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, maiores! Laborum consequuntur et distinctio ratione dolor! Temporibus praesentium est, maiores ipsam porro sapiente dolore voluptatum repellendus at molestiae quam non  sapiente dolore voluptatum.</p>
+            </div>
+            <div class="col-md-6 text-sm-center text-lg-right">
+                <img src="pic/duraz-na-detail-a-kvalitu.jpg" alt="Důraz na detail a kvalitu">
+            </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-6 text-sm-center text-lg-left order-sm-2 order-md-first">
+            <img src="pic/vyrobeno-v-cr.png" alt="Vyrobeno v České republice">
+          </div>
+          <div class="col-md-6">
+              <h3 class="pb-2" id="title">Místní podmínky</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum est cupiditate Laborum consequuntu eveniet dicta ad non dolor quae eum laudantium Laborum consequuntu atque dolore praesentium quas corrupti</p>
+              <p>Lorem ipsum dolor dolor, ipsum, nostrum ipsa officia quo dolores veritatis aspernatur commodi saepe provident nam inventore ea, corporis minima omnis!</p> 
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, maiores! Laborum consequuntur et  Temporibus praesentium est, maiores ipsam porro sapiente dolore voluptatum repellendus at molestiae quam non  sapiente dolore voluptatum.</p>
+          </div>
+      </div>
+    </div>
+  </main>
+
+<!----------------------------------------Novinky Gdansk----------------------------------------------------------------->
+
+<section class="jumbotron mt-5" id="koncovy-jumbotron">   
+  <div class="row">
+      <div class="col-lg-4 col-md-6 offset-md-2">
+          <div class="bg-white px-5 py-4">
+              <h1>Novinky Gdansk</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio</p>
+              <form>
+                <div class="input-group">
+                  <input class="form-control py-2" type="text" placeholder="Zadejte Váš e-mail">
+                  <span class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">
+                          <img src="pic/mail.png" alt="Zadejte vaši emailovou adresu">
+                      </button>
+              </form>  
+          </div>
+
+          <a href="#odkaz" class="text-muted"><u>Ukázkový e-mail pro představu</u></a>  
+  </div>
+</div>    
+</section>
+
+    <!------------------------CO O NÁS KLIENTI ŘÍKAJÍ?----------------------------->
+
+    <div class="container">
+      <h3 class="text-center my-5">CO O NÁS ŘÍKAJÍ KLIENTI ?</h3>
+        <div class="row ">
+  
+          <div class="col-md-6">
+            <div class="user-comment">
+              <p class="ml-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem et dignissimos obcaecati itaque fuga delectus velit veritatis ipsum pariatur, cum soluta quibusdam omnis odio officia quia veniam consectetur tempora nemo!</p>
+              <div class="row">
+                <div class="col-3 text-right">
+                  <img src="pic/user1.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <h6>Angelika</h6>
+                  <p class="text-muted">Spoluzakladatelka Elegantweb</p>
+                </div>
+              </div>
+            </div>       
+          </div>
+
+          <div class="col-md-6">
+            <div class="user-comment-right">
+              <p class="ml-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem et dignissimos obcaecati itaque fuga delectus velit veritatis ipsum pariatur, cum soluta quibusdam omnis odio officia quia veniam consectetur tempora nemo!</p>
+              <div class="row">
+                <div class="col-3 text-left text-lg-right">
+                  <img src="pic/user2.jpg" alt="">
+                </div>
+                <div class="col-9 order-first order-lg-2 text-right text-lg-left">
+                  <h6>Jan Frydrych</h6>
+                  <p class="text-muted">Zakladatel Elegantweb</p>
+                </div>
+              </div>
+            </div>       
+          </div>
+          </div>
+        </div>
+    </div>
+
+    <!------------------------NAJDĚTE NÁS NA SOCIÁLNÍCH SÍTÍCH----------------------------->
+
+<div class="container-social-media py-5">
+  <h1 class="text-center my-5">Najděte nás na sociálních sítích</h1>
+  <div class="row justify-content-center">
+
+    <div class="col-4 col-md-2">
+      <img src="pic/facebook-icon.png" alt="" class="img-fluid">
+    </div>
+
+    <div class="col-4 col-md-2">
+      <img src="pic/instagram-icon.png" alt="" class="img-fluid">
+    </div>
+
+    <div class="col-4 col-md-2">
+      <img src="pic/twitter-icon.png" alt="" class="img-fluid">
+    </div>
+
+    <div class="col-4 col-md-2">
+      <img src="pic/whatsapp-icon.png" alt="" class="img-fluid">
+    </div>
+
+    <div class="col-4 col-md-2">
+      <img src="pic/linkedin-icon.png" alt="" class="img-fluid">
+    </div>
+
+    <div class="col-4 col-md-2">
+      <img src="pic/snapchat-icon.png" alt="" class="img-fluid">
+    </div>
+
+  </div>
+</div>
+
+<!------------------------FOOTER----------------------------->
+
+<footer class="pt-4">
+  <div class="container mt-4">
+      <div class="row text-white">
+
+        <div class="col-md-4">
+          <h6>KDE NÁS NAJDETE?</h6>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates debitis assumenda perferendis rem porro tempora quas, ab minima consequuntur vero quis aliquid laborum veniam minus eius recusandae voluptatibus eos suscipit.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h6>KONTAKTUJTE NÁS</h6>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates debitis assumenda perferendis rem porro tempora quas, ab minima consequuntur vero quis aliquid laborum veniam minus eius recusandae voluptatibus eos suscipit.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h6>ZŮSTAŇME V KONTAKTU</h6>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates debitis assumenda perferendis rem porro tempora quas, ab minima consequuntur vero quis aliquid laborum veniam minus eius recusandae voluptatibus eos suscipit.</p>
+        </div>
+      </div>
+  </div>
+  <div class="bg-primary text-white p-1 pr-3 text-right">Vytvořil Jan Frydrych 2023</div>
+</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

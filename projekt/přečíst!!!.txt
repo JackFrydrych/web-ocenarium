@@ -1,0 +1,5 @@
+- Celý projekt mi zabral cca 5 hodin čistého času
+- V projektu jsem se snažil zobrazit své znalosti jak Bootstrapu, tak čistého HTML, CSS(např. v galerii obrázků)
+- Pokud by byl web na serveru, ještě bych převedl obrázky do .webP formátu pro lepší optimalizaci
+- CSS reset jsem nemusel používat, jelikož má většinu defaultních nastavení samotný Bootstrap
+- Bohužel se mi nepodařilo správně zprovoznit fonty(pomocí příkazu @font-face) a po nalinkování jsou všechny druhy fontů tučným písmem
